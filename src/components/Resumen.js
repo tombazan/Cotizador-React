@@ -1,4 +1,5 @@
-import React, {Fragment} from 'react';
+import React from 'react';
+import PropTypes from 'prop-types';
 import styled from '@emotion/styled'
 import {primerMayuscula} from '../Helpers'
 
@@ -28,4 +29,7 @@ const Resumen = ({datos}) => {
      );
 }
  
+Resumen.propTypes = {
+    datos: PropTypes.object.isRequired
+}
 export default Resumen;
